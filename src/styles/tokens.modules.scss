@@ -1,0 +1,12 @@
+@use "./variables.scss" as *;
+
+:export {
+  midnightBlue: $midnightBlue;
+  mysticBlue: $mysticBlue;
+  vaporBlue: $vaporBlue;
+  nuclearYellow: $nuclearYellow;
+  pickledPink: $pickledPink;
+  violetPurple: $violetPurple;
+  black: $black;
+  white: $white;
+}

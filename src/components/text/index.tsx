@@ -1,15 +1,16 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-interface TextProps {
-  as: string;
+interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
+  as: 'p' | 'span';
   children: React.ReactNode;
 }
 
-export const Text = ({ children, ...restProps }: TextProps) => {
+export const Text = ({ children, as, ...restProps }: TextProps) => {
+	const TextComponent = as
 	return (
 		<>
-			<p {...restProps}>{children}</p>
+			<TextComponent {...restProps}>{children}</TextComponent>
 		</>
 	)
 }
