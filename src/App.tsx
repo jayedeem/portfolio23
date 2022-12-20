@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './app.module.scss'
+import { Container } from '@/components/'
 
 function App() {
-	return <div>fuck</div>
+	return <Container bgColor="purple">hello</Container>
 }
 
 export default App
