@@ -31,7 +31,7 @@ function App() {
                     Hey!{' '}
 										<span
 											className={styles.wave}
-											aria-label="Emojii hand waving to you"
+											aria-label="Emojii hand waving at you"
 										>
                       👋
 										</span>{' '}
@@ -40,10 +40,7 @@ function App() {
 									<Heading as="h3" style={{ color: '#fff' }}>
                     Andrew Cacayuran
 									</Heading>
-									<Heading
-										as="h3"
-										style={{ color: '#E0457B', textShadow: '#000 10px 0 25px' }}
-									>
+									<Heading as="h3" style={{ color: '#E0457B' }}>
                     I build cool stuff on the web.
 									</Heading>
 									<Text as="p">
