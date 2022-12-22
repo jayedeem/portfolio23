@@ -14,6 +14,7 @@
   }
   p {
     font-size: 24px;
+    font-family: $secondaryFont;
   }
   .mintMobile {
     text-decoration: none;
@@ -54,6 +55,16 @@
   ul {
     li {
       list-style-type: none;
+      position: relative;
+      left: 15px;
+      &::before {
+        position: absolute;
+        content: ">";
+        color: $pickledPink;
+        top: 0;
+        left: 0;
+        margin-left: -15px;
+      }
     }
   }
   &__tech {

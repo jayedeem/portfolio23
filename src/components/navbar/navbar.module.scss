@@ -21,6 +21,7 @@ ul.navbarList {
   align-items: center;
   li {
     list-style-type: none;
+    font-family: $secondaryFont;
     a {
       color: $nuclearYellow;
       text-decoration: none;
