@@ -27,11 +27,23 @@ function App() {
 						<div>
 							<Container>
 								<div className={styles.heroContainer}>
-									<Heading as="h1">Hey! I am</Heading>
+									<Heading as="h1">
+                    Hey!{' '}
+										<span
+											className={styles.wave}
+											aria-label="Emojii hand waving to you"
+										>
+                      👋
+										</span>{' '}
+                    I am
+									</Heading>
 									<Heading as="h3" style={{ color: '#fff' }}>
                     Andrew Cacayuran
 									</Heading>
-									<Heading as="h3" style={{ color: '#E0457B' }}>
+									<Heading
+										as="h3"
+										style={{ color: '#E0457B', textShadow: '#000 10px 0 25px' }}
+									>
                     I build cool stuff on the web.
 									</Heading>
 									<Text as="p">
@@ -70,10 +82,11 @@ function App() {
 										</ul>
 										<ul>
 											<li>React</li>
-											<li>Node.js</li>
 											<li>NextJS</li>
+											<li>Node.js</li>
 										</ul>
 										<ul>
+											<li>MySQL</li>
 											<li>Wordpress</li>
 											<li>Sass</li>
 										</ul>
