@@ -1,0 +1,34 @@
+@use "../../styles/variables.scss" as *;
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 20px;
+  }
+}
+
+ul.navbarList {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  li {
+    list-style-type: none;
+    color: $nuclearYellow;
+    font-size: 20px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      list-style-type: none;
+      color: $nuclearYellow;
+      font-size: 20px;
+      display: flex;
+    }
+  }
+}

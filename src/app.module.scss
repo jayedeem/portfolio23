@@ -1,8 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@use "./styles/variables.scss" as *;
+
+.heroContainer {
+  h4 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .mintMobile {
+    text-decoration: none;
+    color: #c8e4d4;
+  }
 }
 
-
+.aboutMe {
+  h4 {
+    position: relative;
+    margin-bottom: 14px;
+    padding-top: 14px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 25px;
+      width: 300px;
+      border: 1px solid white;
+      left: 90px;
+    }
+  }
+  span {
+    padding-top: 14px;
+  }
+  ul {
+    li {
+      list-style-type: none;
+    }
+  }
+  &__tech {
+    display: flex;
+    column-gap: 30px;
+  }
+}
