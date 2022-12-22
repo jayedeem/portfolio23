@@ -1,0 +1,90 @@
+@use "../../styles/variables.scss" as *;
+
+.loading {
+  background-color: $violetPurple;
+  background-image: radial-gradient($violetPurple 120%);
+  height: 100vh;
+  color: white;
+  font: 12px $primaryFont, monospace;
+  background-color: $violetPurple;
+  text-shadow: 0 0 5px #c8c8c8;
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  place-items: center;
+  @media screen and (min-width: 768px) {
+    font: 20px $primaryFont, monospace;
+  }
+}
+::selection {
+  background: #0080ff;
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+
+.dotPulse {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  top: 5px;
+  margin-left: 10px;
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+.dotPulse::before,
+.dotPulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dotPulse::before {
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+.dotPulse::after {
+  left: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #fff;
+  }
+  50%,
+  100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}

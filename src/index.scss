@@ -10,3 +10,7 @@ body {
   background: $violetPurple;
   font-family: $primaryFont;
 }
+
+section:first-of-type {
+  margin: 0 auto 150px auto;
+}
