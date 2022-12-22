@@ -35,9 +35,9 @@ function App() {
 							</Text>
 						</div>
 					</Container>
-					<Container bgColor="#5461C8">
+					<Container bgColor="#5461C8" id="aboutMe">
 						<div className={styles.aboutMe}>
-							<Heading as="h4">About Me</Heading>
+							<Heading as="h1">About Me</Heading>
 							<Text as="p" style={{ color: '#fff' }}>
                 I am Andrew Cacayuran, I have been an avid person in tech. I
                 started off by taking apart my first computer by the age of 15.
@@ -47,7 +47,7 @@ function App() {
                 myself, I was able to get into the Software Engineering position
                 .
 							</Text>
-							<Text as="p">Technology I currently work with: </Text>
+							<Text as="span">Technology I currently work with: </Text>
 							<div className={styles.aboutMe__tech}>
 								<ul>
 									<li>Javascript</li>

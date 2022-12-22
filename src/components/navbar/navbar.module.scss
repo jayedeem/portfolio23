@@ -21,9 +21,16 @@ ul.navbarList {
   align-items: center;
   li {
     list-style-type: none;
-    color: $nuclearYellow;
+    a {
+      color: $nuclearYellow;
+      text-decoration: none;
+    }
     font-size: 20px;
     display: none;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
     @media screen and (min-width: 768px) {
       list-style-type: none;
       color: $nuclearYellow;

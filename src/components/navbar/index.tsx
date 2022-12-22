@@ -10,10 +10,18 @@ export const NavBar = () => {
 			</div>
 			<div>
 				<ul className={styles.navbarList}>
-					<li>About</li>
-					<li>Experience</li>
-					<li>Work</li>
-					<li>Contact</li>
+					<li>
+						<a href="#aboutMe">About</a>
+					</li>
+					<li>
+						<a href="#experience">Experience</a>
+					</li>
+					<li>
+						<a href="#work">Work</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
 				</ul>
 			</div>
 		</div>
