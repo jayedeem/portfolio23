@@ -49,7 +49,7 @@ function App() {
 									</Text>
 								</div>
 							</Container>
-							<Container bgColor="#5461C8" id="aboutMe">
+							<Container bgColor="#5461C8" id="aboutMe" minWidth="100%">
 								<div className={styles.aboutMe}>
 									<Heading as="h1">About Me</Heading>
 									<Text as="p" style={{ color: '#fff' }}>

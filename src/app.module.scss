@@ -23,11 +23,13 @@
   @media screen and (min-width: 768px) {
     height: unset;
     display: block;
-    margin: unset;
+    margin-top: unset;
   }
 }
 
 .aboutMe {
+  max-width: 1440px;
+  margin: 0 auto;
   h1 {
     position: relative;
     // padding-left: 14px;
