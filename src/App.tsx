@@ -5,13 +5,13 @@ import styles from './app.module.scss'
 function App() {
 	const [loading, setLoading] = useState<boolean>(false)
 
-	// useEffect(() => {
-	// 	setLoading(true)
+	useEffect(() => {
+		setLoading(true)
 
-	// 	setTimeout(() => {
-	// 		setLoading(false)
-	// 	}, 2000)
-	// }, [])
+		setTimeout(() => {
+			setLoading(false)
+		}, 2000)
+	}, [])
 
 	return (
 		<>
