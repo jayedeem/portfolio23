@@ -3,7 +3,7 @@ import style from './container.module.scss'
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
-  bgColor: string;
+  bgColor?: string;
 }
 
 export const Container = ({
@@ -14,7 +14,7 @@ export const Container = ({
 	return (
 		<section
 			className={style.container}
-			style={{ backgroundColor: 'nuclearYellow' }}
+			style={{ backgroundColor: bgColor }}
 			{...restProps}
 		>
 			{children}
