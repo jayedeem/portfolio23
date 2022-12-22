@@ -56,6 +56,8 @@ function App() {
 									<li>React</li>
 									<li>Node.js</li>
 									<li>NextJS</li>
+								</ul>
+								<ul>
 									<li>Wordpress</li>
 									<li>Sass</li>
 								</ul>

@@ -20,18 +20,9 @@
   h4 {
     position: relative;
     margin-bottom: 14px;
-    padding-top: 14px;
-    &::after {
-      position: absolute;
-      content: "";
-      top: 25px;
-      width: 300px;
-      border: 1px solid white;
-      left: 90px;
-    }
   }
-  span {
-    padding-top: 14px;
+  p {
+    padding-bottom: 14px;
   }
   ul {
     li {
