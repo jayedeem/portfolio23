@@ -2,9 +2,13 @@ import React from 'react'
 import logo from '../../assets/logo.svg'
 import styles from './navbar.module.scss'
 
-export const NavBar = () => {
+interface NavBarProps {
+  isOpen: boolean;
+  toggleModal: () => void;
+}
+export const NavBar = ({ isOpen, toggleModal }: NavBarProps) => {
 	return (
-		<div className={styles.navbarContainer}>
+		<nav className={styles.navbarContainer}>
 			<div>
 				<img src={logo} alt="Drew Jason" />
 			</div>
@@ -24,6 +28,6 @@ export const NavBar = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	)
 }

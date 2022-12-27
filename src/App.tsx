@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import { Container, NavBar, Text, Heading, FakeLoading } from '@/components/'
 import styles from './app.module.scss'
+import { useState, useEffect } from 'react'
+import { FakeLoading, NavBar, Container, Heading, Text } from './components'
 
 function App() {
 	const [loading, setLoading] = useState<boolean>(false)
+	const { isOpen, toggleModal } = useModal()
 
 	useEffect(() => {
 		setLoading(true)
 
-		setTimeout(() => {
+		const timeout = setTimeout(() => {
 			setLoading(false)
 		}, 2000)
+		return () => {
+			clearTimeout(timeout)
+		}
 	}, [])
 
 	return (
@@ -19,11 +23,8 @@ function App() {
 				<FakeLoading />
 			) : (
 				<>
-					<head>
-						<title>Drew Jason | Web Dev</title>
-					</head>
 					<div>
-						<NavBar />
+						<NavBar isOpen={isOpen} toggleModal={toggleModal} />
 						<div>
 							<Container>
 								<div className={styles.heroContainer}>
