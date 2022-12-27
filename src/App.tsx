@@ -1,6 +1,7 @@
 import styles from './app.module.scss'
 import { useState, useEffect } from 'react'
 import { FakeLoading, NavBar, Container, Heading, Text } from './components'
+import { useModal } from './hooks'
 
 function App() {
 	const [loading, setLoading] = useState<boolean>(false)
